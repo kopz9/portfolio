@@ -4,7 +4,9 @@ import Link from "next/link";
 export default function Socials() {
   return (
     <>
-      <h1 className="mt-8 text-center text-3xl font-semibold">Socials</h1>
+      <h1 className="mt-8 text-center text-3xl font-semibold">
+        Onde me encontrar?
+      </h1>
       <div className="flex justify-center gap-12">
         <div className="mt-14">
           <Link href="https://github.com/kopz9" target="_blank">
