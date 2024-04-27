@@ -4,16 +4,39 @@ export default function Form() {
   async function handleFormSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
+    const formData = new FormData(event.currentTarget);
+    const email = formData.get("email") as string;
+    const message = formData.get("message") as string;
+
+    if (!email.trim() || !message.trim()) {
+      alert("Por favor, preencha todos os campos.");
+      return;
+    }
+
+    if (email.trim().length < 10) {
+      alert("Por favor, insira um email válido.");
+      return;
+    }
+
+    if (message.trim().length < 10) {
+      alert("Mensagem muito curta");
+      return;
+    }
+
     const scriptUrl =
       "https://script.google.com/macros/s/AKfycbwE2jqDqY_rFXEtoWHNMiFA72NGQEJirTAGr8L5jsbwrtpXQ3c34oIs5PuJT6LmPRrxyA/exec";
 
     await fetch(scriptUrl, {
       method: "POST",
-      body: new FormData(event.currentTarget),
-    }).catch(() => { // XD
-      alert("Mensagem enviada com sucesso!"); 
-      window.location.reload();
-    });
+      body: formData,
+    })
+      .then(() => {
+        alert("Mensagem enviada com sucesso!");
+        window.location.reload();
+      })
+      .catch(() => {
+        alert("Ocorreu um erro ao enviar a mensagem.");
+      });
   }
 
   return (
