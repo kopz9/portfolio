@@ -1,4 +1,5 @@
 import Form from "./_components/form";
+import Socials from "./_components/socials";
 
 export default function HomePage() {
   return (
@@ -13,6 +14,7 @@ export default function HomePage() {
           </p>
         </div>
         <Form />
+        <Socials />
       </main>
     </>
   );
