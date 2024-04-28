@@ -4,9 +4,11 @@ import { dataMockup } from "./card/types";
 export default function Projects() {
   return (
     <>
-      <h2>Projetos</h2>
+      <h2 className="mb-3 mt-8 text-center font-mono text-3xl font-semibold">
+        Projetos
+      </h2>
       {dataMockup.length > 0 ? (
-        <section>
+        <section className="">
           {dataMockup.map((project, index) => (
             <Card
               key={index}

@@ -1,17 +1,16 @@
 import type { CardProps } from "./card";
 
-
 export const dataMockup: CardProps[] = [
   {
     title: "Duolingo Clone",
-    description: "Clone do site do Duolingo",
+    description: "Clone do site Duolingo",
     link: "https://duolingo-clone-green.vercel.app/",
-    image: "/duolingo.png",
+    image: "/lingo.png",
   },
   {
-    title: "Projeto 2",
-    description: "Projeto 2",
-    link: "https://github.com/kopz9",
-    image: "/duolingo.png",
+    title: "Barbearia",
+    description: "Barbearia fictícia",
+    link: "https://landing-pages-chi-five.vercel.app/",
+    image: "/barbearia.png",
   },
 ];
