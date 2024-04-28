@@ -17,6 +17,9 @@ export default function HomePage() {
         <Projects />
         <Form />
         <Socials />
+        <footer className="mt-[100px] bg-gray-600 text-center">
+          Feito por Gustavo © 2024
+        </footer>
       </main>
     </>
   );
