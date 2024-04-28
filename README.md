@@ -9,3 +9,6 @@ TODO
 - [x] Contact me (form)
 - [x] Socials
 - [ ] little footer 
+
+
+- [ ] responsive
