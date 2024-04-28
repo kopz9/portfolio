@@ -11,13 +11,12 @@ export default function HomePage() {
           <p className="mx-auto mt-4 w-[500px] text-xl">
             Sou desenvolvedor Full-Stack, moro na capital de São Paulo e estou
             cursando o 4° semestre da faculdade de Análise e Desenvolvimento de
-            Sistemas pelo SENAC
+            Sistemas pelo SENAC, atualmente estudando ReactJS e TypeScript.
           </p>
         </div>
         <Projects />
         <Form />
         <Socials />
-        
       </main>
     </>
   );
