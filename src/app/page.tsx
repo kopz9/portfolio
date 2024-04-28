@@ -1,4 +1,5 @@
 import Form from "./_components/form";
+import Projects from "./_components/projects";
 import Socials from "./_components/socials";
 
 export default function HomePage() {
@@ -13,8 +14,10 @@ export default function HomePage() {
             Sistemas pelo SENAC
           </p>
         </div>
+        <Projects />
         <Form />
         <Socials />
+        
       </main>
     </>
   );
