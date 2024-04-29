@@ -47,7 +47,7 @@ export default function Form() {
       <form
         method="POST"
         onSubmit={handleFormSubmit}
-        className="mx-auto mt-3 flex w-[500px] flex-col"
+        className="mx-auto mt-3 w-full max-w-md px-4"
       >
         <input
           type="email"
@@ -64,7 +64,7 @@ export default function Form() {
         />
         <button
           type="submit"
-          className="mt-4 rounded border border-gray-400 bg-white px-4 py-2 font-semibold text-gray-800 shadow hover:bg-gray-100 "
+          className="mt-4 w-full rounded border border-gray-400 bg-white px-4 py-2 font-semibold text-gray-800 shadow hover:bg-gray-100"
         >
           Enviar
         </button>

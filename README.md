@@ -8,7 +8,5 @@ TODO
 - [x] Projects 
 - [x] Contact me (form)
 - [x] Socials
-- [ ] little footer 
-
-
-- [ ] responsive
+- [x] little footer 
+- [x] responsive
